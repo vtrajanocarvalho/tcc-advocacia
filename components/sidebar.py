@@ -18,12 +18,12 @@ layout = dbc.Container([
         dbc.Container([
             dbc.Row([
                 dbc.Col([
-                    html.H1("ASIMOV", style={'color': 'yellow'})#, 'font-size': 'width / 1.2'})
+                    html.H1("TCC - IEPO", style={'color': 'white'})#, 'font-size': 'width / 1.2'})
                 ])
             ]),
             dbc.Row([
                 dbc.Col([
-                    html.H3("ASSOCIATES", style={'color': 'white'})
+                    html.H3("Gestão de Processos Judiciais", style={'color': 'white'})
                 ]),
             ]),
         ], style={'padding-top': '50px', 'margin-bottom': '100px'}, className='text-center'),
@@ -39,7 +39,7 @@ layout = dbc.Container([
                 ], vertical="lg", pills=True, fill=True)
             ])
         ]),
-], style={'height': '100vh', 'padding': '0px', 'position':'sticky', 'top': 0, 'background-color': '#232423'})
+], style={'height': '100vh', 'padding': '0px', 'position':'sticky', 'top': 0, 'background-color': '#4682B4'})
     
 
 # ======= Callbacks ======== #

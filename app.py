@@ -6,8 +6,8 @@ dbc_css = "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.0.4
 # FONT_AWESOME = "https://use.fontawesome.com/releases/v5.10.2/css/all.css"
 
 
-app = dash.Dash(__name__, external_stylesheets=estilos + [dbc_css])
+app = dash.Dash(__name__, external_stylesheets=estilos + [dbc_css]) 
 
-app.config['suppress_callback_exceptions'] = True
-app.scripts.config.serve_locally = True
+app.config['suppress_callback_exceptions'] = True # marcado true, ra suprimir alguns aviso que vão dar ao recorrer do de desenvolvimento 
+app.scripts.config.serve_locally = True 
 server = app.server

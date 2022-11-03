@@ -8,7 +8,7 @@ body {
 
 /* Pills Color */
 .nav-pills .nav-link.active {
-  background-color: yellow;
+  background-color: DarkGray;
   color: #232423;
 }
 
@@ -27,13 +27,13 @@ body {
     border: 3px solid transparent;
   }
   to {
-    border: 3px solid yellow;
+    border: 3px solid DarkGray;
   }
 }
 
 @keyframes border_out {
   from {
-    border: 3px solid yellow;
+    border: 3px solid DarkGray;
   }
   to {
     border: 3px solid transparent;
