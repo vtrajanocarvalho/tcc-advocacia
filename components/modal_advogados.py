@@ -6,7 +6,7 @@ import dash_bootstrap_components as dbc
 import pandas as pd
 
 from dash import dash_table
-from dash.dash_table.Format import Group
+from dash.dash_table.Format import Group 
 
 from app import app
 from components import home
@@ -23,7 +23,7 @@ layout = dbc.Modal([
             ]),
             dbc.ModalFooter([
                 dbc.Button("Sair", id="quit_button", color="danger"),
-                dbc.Button("Novo", id="new_adv_button", color="success")
+                dbc.Button("Novo", id="new_adv_button", color="success") 
             ])
         ], id="modal_lawyers", size="lg", is_open=False)
 
@@ -33,7 +33,7 @@ layout = dbc.Modal([
 @app.callback(
     Output('table_adv', 'children'),
     Input('store_adv', 'data')
-    # Input(ThemeChangerAIO.ids.radio("theme"), "value")]
+    # Input(ThemeChangerAIO.ids.radio("theme"), "value")] 
 )
 def table(data):
     df = pd.DataFrame(data)

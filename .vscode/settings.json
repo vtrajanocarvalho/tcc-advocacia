@@ -4,5 +4,12 @@
         "es",
         "sql",
         "xml"
-    ]
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "cSpell.words": [
+        "plotly"
+    ],
+    "window.autoDetectColorScheme": false,
+    "explorer.enableUndo": true,
+    "remote.downloadExtensionsLocally": true
 }

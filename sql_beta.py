@@ -1,12 +1,12 @@
 ﻿import pandas as pd
 import sqlite3
 
-# TESTES PARA O SQL =========================
+
 # Criando o Conn
 conn = sqlite3.connect('tcc.db')
 c = conn.cursor()
 
-# create table if not exists TableName (col1 typ1, ..., colN typN)
+# 
 c.execute("""CREATE TABLE IF NOT EXISTS processos (
             'No Processo' number,
             Empresa text,

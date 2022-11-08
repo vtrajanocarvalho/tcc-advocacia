@@ -3,11 +3,11 @@ import dash_bootstrap_components as dbc
 
 estilos = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", dbc.themes.LUX]
 dbc_css = "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.0.4/dbc.min.css"
-# FONT_AWESOME = "https://use.fontawesome.com/releases/v5.10.2/css/all.css"
 
 
-app = dash.Dash(__name__, external_stylesheets=estilos + [dbc_css]) 
 
-app.config['suppress_callback_exceptions'] = True # marcado true, ra suprimir alguns aviso que vão dar ao recorrer do de desenvolvimento 
+app = dash.Dash(__name__, external_stylesheets=estilos + [dbc_css]) # Aqui fizemos o instaciamento do nosso app.
+
+app.config['suppress_callback_exceptions'] = True # Marcado true, pra suprimir algumas exceção de alguns callback.
 app.scripts.config.serve_locally = True 
 server = app.server
