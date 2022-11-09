@@ -18,7 +18,7 @@ layout = dbc.Container([
         dbc.Container([
             dbc.Row([
                 dbc.Col([
-                    html.H1("TCC - IEPO", style={'color': 'white'})#, 'font-size': 'width / 1.2'})
+                    html.H1("TCC - IEPO", style={'color': 'white'})
                 ])
             ]),
             dbc.Row([
@@ -43,7 +43,7 @@ layout = dbc.Container([
     
 
 # ======= Callbacks ======== #
-# Abrir Modal New Lawyer
+# Abrir Modal Novo Advogado
 @app.callback(
     Output('modal_new_lawyer', "is_open"),
     Input('new_adv_button', 'n_clicks'),
@@ -55,7 +55,7 @@ def toggle_modal(n, n2, is_open):
         return not is_open
     return is_open
 
-# Abrir Modal Lawyers
+# Abrir Modal Advogado
 @app.callback(
     Output('modal_lawyers', "is_open"),
     Input('lawyers_button', 'n_clicks'),

@@ -2,9 +2,9 @@
 import sqlite3
 
 
-# Criando o Conn
+# Criando o objeto Conn 
 conn = sqlite3.connect('tcc.db')
-c = conn.cursor()
+c = conn.cursor() "C nosso cursor, a partir dele que executamos todas nossas ações, criação de tabelas etc"
 
 # 
 c.execute("""CREATE TABLE IF NOT EXISTS processos (

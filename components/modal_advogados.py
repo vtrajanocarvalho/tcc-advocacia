@@ -21,9 +21,9 @@ layout = dbc.Modal([
                     ]),
                 ])
             ]),
-            dbc.ModalFooter([
-                dbc.Button("Sair", id="quit_button", color="danger"),
-                dbc.Button("Novo", id="new_adv_button", color="success") 
+            dbc.ModalFooter([ #rodapé 
+                dbc.Button("Sair", id="quit_button", color="danger"), #botão pra sair 
+                dbc.Button("Novo", id="new_adv_button", color="success")  #botão de novo  
             ])
         ], id="modal_lawyers", size="lg", is_open=False)
 
@@ -33,18 +33,18 @@ layout = dbc.Modal([
 @app.callback(
     Output('table_adv', 'children'),
     Input('store_adv', 'data')
-    # Input(ThemeChangerAIO.ids.radio("theme"), "value")] 
+    
 )
 def table(data):
-    df = pd.DataFrame(data)
+    df = pd.DataFrame(data) 
 
     df = df.fillna('-')
     return [dash_table.DataTable(
         id='datatable',
-        columns = [{"name": i, "id": i} for i in df.columns],
+        columns = [{"name": i, "id": i} for i in df.columns], 
         data=df.to_dict('records'),
         filter_action="native",    
         sort_action="native",       
         sort_mode="single", 
-        page_size=10,            
-        page_current=0)]
+        page_size=10, #nessa linha indica que a cada pagina, ixibira 10 advogados           
+        page_current=0)] 
