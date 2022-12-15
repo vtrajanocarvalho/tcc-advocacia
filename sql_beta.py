@@ -8,26 +8,26 @@ c = conn.cursor() #"C nosso cursor, a partir dele que executamos todas nossas a�
 
 # 
 c.execute("""CREATE TABLE IF NOT EXISTS processos (
-            'No Processo' number,
+            'Processo' Int,
             Empresa text,
             Tipo text,
             Ação text,
             Vara text,
             Fase text,
-            Instância number,
-            'Data Inicial' text,
-            'Data Final' text,
-            'Processo Concluído' number,
-            'Processo Vencido' number,
+            Instância Int,
+            'Data Inicial' Date,
+            'Data Final' Date,
+            'Processo Concluído' Int,
+            'Processo Vencido' Int,
             Advogados text,
             Cliente text,
-            'Cpf Cliente' number,
+            'Cpf Cliente' Int,
             'Descrição' text)""")
 
 c.execute("""CREATE TABLE IF NOT EXISTS advogados (
             Advogado text,
-            OAB number,
-            CPF number)""")
+            OAB Int,
+            CPF Int)""")
 
 df_adv = pd.read_sql("SELECT * FROM advogados", conn)
 df_proc = pd.read_sql("SELECT * FROM processos", conn)

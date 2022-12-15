@@ -10,7 +10,7 @@ from components import home, sidebar #Da pasta components importamos a sidebar e
 from sql_beta import df_proc, df_adv 
 
 data_int = {
-        'No Processo': [], 
+        'Processo': [], 
         'Empresa': [],
         'Tipo': [],
         'Ação': [],
